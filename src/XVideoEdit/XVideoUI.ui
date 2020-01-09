@@ -82,8 +82,8 @@ QPushButton:!hover
   <widget class="QPushButton" name="openButton">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>330</y>
+     <x>480</x>
+     <y>340</y>
      <width>60</width>
      <height>30</height>
     </rect>
@@ -108,6 +108,22 @@ QPushButton:!hover
      <width>60</width>
      <height>60</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QSlider" name="playSlider">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>381</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>999</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
  </widget>

@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QWidget>
 #include "xvideowidget.h"
 
@@ -26,6 +27,7 @@ public:
     QPushButton *closeButton;
     XVideoWidget *src1video;
     QPushButton *openButton;
+    QSlider *playSlider;
 
     void setupUi(QWidget *XVideoUIClass)
     {
@@ -68,10 +70,15 @@ public:
         src1video->setGeometry(QRect(0, 0, 400, 300));
         openButton = new QPushButton(XVideoUIClass);
         openButton->setObjectName(QStringLiteral("openButton"));
-        openButton->setGeometry(QRect(410, 330, 60, 30));
+        openButton->setGeometry(QRect(480, 340, 60, 30));
         openButton->setMinimumSize(QSize(60, 30));
         openButton->setMaximumSize(QSize(60, 30));
         openButton->setIconSize(QSize(60, 60));
+        playSlider = new QSlider(XVideoUIClass);
+        playSlider->setObjectName(QStringLiteral("playSlider"));
+        playSlider->setGeometry(QRect(10, 320, 381, 21));
+        playSlider->setMaximum(999);
+        playSlider->setOrientation(Qt::Horizontal);
 
         retranslateUi(XVideoUIClass);
         QObject::connect(closeButton, SIGNAL(clicked()), XVideoUIClass, SLOT(close()));

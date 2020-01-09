@@ -18,6 +18,8 @@ public:
 		static XVideoThread vt;
 		return &vt;
 	}
+	//返回当前播放位置
+	double GetPos();
 
 public:
 	int fps = 0;

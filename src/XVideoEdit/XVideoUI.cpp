@@ -11,12 +11,16 @@ XVideoUI::XVideoUI(QWidget *parent)
 	ui.setupUi(this);
 	setWindowFlags(Qt::FramelessWindowHint);//隐藏标题栏
 
+	//原视频显示 信号和槽
 	qRegisterMetaType<cv::Mat>("cv::Mat");
 	QObject::connect(XVideoThread::Get(),
 		SIGNAL(ViewImge1(cv::Mat)),
 		ui.src1video,
 		SLOT(SetImage(cv::Mat))
 		);
+
+	//定时刷新进度条
+	startTimer(40);
 }
 
 void XVideoUI::Open()
@@ -28,4 +32,11 @@ void XVideoUI::Open()
 	{
 		QMessageBox::information(0, "err", name + "open failed");
 	}
+}
+
+//定时刷新进度条
+void XVideoUI::timerEvent(QTimerEvent *e)
+{
+	double pos = XVideoThread::Get()->GetPos();
+	ui.playSlider->setValue(pos * 1000);
 }

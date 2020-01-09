@@ -9,6 +9,7 @@ class XVideoUI : public QWidget
 
 public:
 	XVideoUI(QWidget *parent = Q_NULLPTR);
+	void timerEvent(QTimerEvent *e);//定时刷新进度条
 
 public slots:
 	void Open();
