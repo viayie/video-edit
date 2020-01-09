@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/XVideoUI">
+        <file>Resources/open.png</file>
+        <file>Resources/close.png</file>
+    </qresource>
+</RCC>

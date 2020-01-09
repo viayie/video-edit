@@ -1,0 +1,71 @@
+﻿生成启动时间为 2020/1/9 10:25:54。
+     1>项目“D:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\XVideoEdit.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>QtVars:
+         Reading Qt configuration (C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\qmake.exe)
+         WHERE /Q cl.exe
+         ("C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\qmake.exe") 1> qtvars.log 2>&1
+     1>项目“D:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\XVideoEdit.vcxproj”(1)正在节点 2 上生成“D:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\XVideoEdit.vcxproj”(1:2) (Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>QtRccSetDependencies:
+         "C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe" --list "XVideoUI.qrc" > "x64\Debug\rcc_list.txt" 2> nul
+       QtWork:
+         moc XVideoUI.h
+         moc XVideoThread.h
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Ix64\Debug\uic /Ix64\Debug\moc /I..\include /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtOpenGL /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtANGLE /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore /I"C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015" /Ix64\Debug\moc /Ix64\Debug\uic /Zi /nologo /W1 /WX- /MP /Od /D UNICODE /D WIN32 /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp XVideoThread.cpp XVideoUI.cpp XVideoWidget.cpp
+         main.cpp
+         XVideoThread.cpp
+         XVideoUI.cpp
+         XVideoWidget.cpp
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/imgproc.hpp(592): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/imgproc.hpp(592): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Ix64\Debug\uic /Ix64\Debug\moc /ID:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\ /I..\include /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtOpenGL /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtANGLE /IC:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore /I"C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015" /Ix64\Debug\moc /Ix64\Debug\uic /Zi /nologo /W1 /WX- /MP /Od /D UNICODE /D WIN32 /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt x64\Debug\\rcc\qrc_XVideoUI.cpp x64\Debug\\moc\moc_XVideoWidget.cpp x64\Debug\\moc\moc_XVideoUI.cpp x64\Debug\\moc\moc_XVideoThread.cpp
+         qrc_XVideoUI.cpp
+         moc_XVideoWidget.cpp
+         moc_XVideoUI.cpp
+         moc_XVideoThread.cpp
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoThread.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoWidget.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoUI.cpp)
+     1>D:\Viayie\markdown\OpenCV\XVideo\src\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\\moc\moc_XVideoUI.cpp)
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\\XVideoEdit.exe" /NOLOGO /LIBPATH:..\..\lib /LIBPATH:C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib /LIBPATH:C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:C:\utils\postgresql\pgsql\lib opencv_world320d.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\qtmaind.lib shell32.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Guid.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Cored.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\qtmaind.lib shell32.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Guid.lib C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"..\..\bin\XVideoEdit.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\XVideoEdit.lib" /MACHINE:X64 x64\Debug\main.obj
+         x64\Debug\XVideoThread.obj
+         x64\Debug\XVideoUI.obj
+         x64\Debug\XVideoWidget.obj
+         x64\Debug\qrc_XVideoUI.obj
+         x64\Debug\moc_XVideoWidget.obj
+         x64\Debug\moc_XVideoUI.obj
+         x64\Debug\moc_XVideoThread.obj
+         XVideoEdit.vcxproj -> D:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\..\..\bin\XVideoEdit.exe
+     1>已完成生成项目“D:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\XVideoEdit.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“D:\Viayie\markdown\OpenCV\XVideo\src\XVideoEdit\XVideoEdit.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:08.63

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>XVideoUIClass</class>
+ <widget class="QWidget" name="XVideoUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>705</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XVideoUI</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton:hover
+{ 
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(120, 120, 120, 255), stop:0.495 rgba(39, 39, 39, 255), stop:0.505 rgba(39,39, 39, 255), stop:1 rgba(120, 120,120, 255));
+	border: none;
+	border-radius:5px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;黑体&quot;;
+}
+QPushButton:!hover
+{ 
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(39, 39, 39, 255), stop:0.495 rgba(120, 120, 120, 255), stop:0.505 rgba(120,120, 120, 255), stop:1 rgba(39, 39,39, 255));
+	border: none;
+	border-radius:5px;
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;黑体&quot;;
+}
+#XVideoUIClass
+{
+	background-color: rgb(53, 53, 53);
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>0</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>关闭</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(53, 53, 53);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="XVideoUI.qrc">
+     <normaloff>:/XVideoUI/Resources/close.png</normaloff>:/XVideoUI/Resources/close.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="XVideoWidget" name="src1video">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>300</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>330</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>XVideoWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>xvideowidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="XVideoUI.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>XVideoUIClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>650</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>-10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>XVideoUIClass</receiver>
+   <slot>Open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>-19</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Open()</slot>
+ </slots>
+</ui>
