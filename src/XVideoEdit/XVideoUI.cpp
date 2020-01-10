@@ -5,6 +5,9 @@
 #include <QMessageBox>
 #include "XVideoThread.h"
 using namespace std;
+
+static bool pressSlider = false;//判断是否按压进度条
+
 XVideoUI::XVideoUI(QWidget *parent)
 	: QWidget(parent)
 {
@@ -37,6 +40,23 @@ void XVideoUI::Open()
 //定时刷新进度条
 void XVideoUI::timerEvent(QTimerEvent *e)
 {
+	if (pressSlider)	return;//如果按压进度条就不刷新了
+
 	double pos = XVideoThread::Get()->GetPos();
 	ui.playSlider->setValue(pos * 1000);
+}
+
+void XVideoUI::SliderPress()
+{
+	pressSlider = true;
+}
+
+void XVideoUI::SliderRelease()
+{
+	pressSlider = false;
+}
+
+void XVideoUI::SetPos(int pos)//滑动条拖动
+{
+	XVideoThread::Get()->Seek((double)pos / 1000.0);
 }

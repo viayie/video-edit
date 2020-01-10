@@ -13,6 +13,9 @@ public:
 
 public slots:
 	void Open();
+	void SliderPress();
+	void SliderRelease();
+	void SetPos(int);//»¬¶¯ÌõÍÏ¶¯
 
 private:
 	Ui::XVideoUIClass ui;

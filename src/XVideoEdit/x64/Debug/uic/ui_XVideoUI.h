@@ -70,7 +70,7 @@ public:
         src1video->setGeometry(QRect(0, 0, 400, 300));
         openButton = new QPushButton(XVideoUIClass);
         openButton->setObjectName(QStringLiteral("openButton"));
-        openButton->setGeometry(QRect(480, 340, 60, 30));
+        openButton->setGeometry(QRect(630, 550, 60, 30));
         openButton->setMinimumSize(QSize(60, 30));
         openButton->setMaximumSize(QSize(60, 30));
         openButton->setIconSize(QSize(60, 60));
@@ -83,6 +83,9 @@ public:
         retranslateUi(XVideoUIClass);
         QObject::connect(closeButton, SIGNAL(clicked()), XVideoUIClass, SLOT(close()));
         QObject::connect(openButton, SIGNAL(clicked(bool)), XVideoUIClass, SLOT(Open()));
+        QObject::connect(playSlider, SIGNAL(sliderPressed()), XVideoUIClass, SLOT(SliderPress()));
+        QObject::connect(playSlider, SIGNAL(sliderReleased()), XVideoUIClass, SLOT(SliderRelease()));
+        QObject::connect(playSlider, SIGNAL(sliderMoved(int)), XVideoUIClass, SLOT(SetPos(int)));
 
         QMetaObject::connectSlotsByName(XVideoUIClass);
     } // setupUi

@@ -82,8 +82,8 @@ QPushButton:!hover
   <widget class="QPushButton" name="openButton">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>340</y>
+     <x>630</x>
+     <y>550</y>
      <width>60</width>
      <height>30</height>
     </rect>
@@ -171,8 +171,59 @@ QPushButton:!hover
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>playSlider</sender>
+   <signal>sliderPressed()</signal>
+   <receiver>XVideoUIClass</receiver>
+   <slot>SliderPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>-19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playSlider</sender>
+   <signal>sliderReleased()</signal>
+   <receiver>XVideoUIClass</receiver>
+   <slot>SliderRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>-15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>XVideoUIClass</receiver>
+   <slot>SetPos(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>381</x>
+     <y>602</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>Open()</slot>
+  <slot>SliderPress()</slot>
+  <slot>SliderRelease()</slot>
+  <slot>SetPos(int)</slot>
  </slots>
 </ui>

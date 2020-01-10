@@ -10,16 +10,23 @@ public:
 
 	//线程入口函数
 	void run();
+
 	//打开视频源文件1
 	bool Open(const std::string file);
+
 	//单件模式 获取对象
 	static XVideoThread *Get()
 	{
 		static XVideoThread vt;
 		return &vt;
 	}
+
 	//返回当前播放位置
 	double GetPos();
+
+	//进度条跳转视频
+	bool Seek(int frame);
+	bool Seek(double pos);
 
 public:
 	int fps = 0;
