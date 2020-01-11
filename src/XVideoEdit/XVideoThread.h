@@ -37,6 +37,9 @@ protected:
 
 
 signals:
+	//显示原视频1图像
 	void ViewImge1(cv::Mat mat);
+	//显示生成视频图像
+	void ViewDes(cv::Mat mat);
 };
 

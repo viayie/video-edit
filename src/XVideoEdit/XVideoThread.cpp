@@ -3,6 +3,7 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <iostream>
+#include "XFilter.h"
 using namespace std;
 using namespace cv;
 
@@ -20,6 +21,7 @@ XVideoThread::~XVideoThread()
 	mutex.lock();
 	isExit = true;
 	mutex.unlock();
+	wait();
 }
 
 //线程入口函数
@@ -46,7 +48,13 @@ void XVideoThread::run()
 		}
 		//显示图像
 		ViewImge1(mat1);
-		//msleep(40);
+
+		//通过过滤器处理视频
+		Mat des = XFilter::Get()->Filter(mat1, Mat());
+
+		//显示生成图像
+		ViewDes(des);
+
 		int s = 1000/fps;
 		msleep(s);
 		mutex.unlock();

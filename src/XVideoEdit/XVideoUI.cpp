@@ -4,6 +4,7 @@
 #include <iostream>
 #include <QMessageBox>
 #include "XVideoThread.h"
+#include "XFilter.h"
 using namespace std;
 
 static bool pressSlider = false;//判断是否按压进度条
@@ -19,6 +20,13 @@ XVideoUI::XVideoUI(QWidget *parent)
 	QObject::connect(XVideoThread::Get(),
 		SIGNAL(ViewImge1(cv::Mat)),
 		ui.src1video,
+		SLOT(SetImage(cv::Mat))
+		);
+
+	//输出视频显示 信号和槽
+	QObject::connect(XVideoThread::Get(),
+		SIGNAL(ViewDes(cv::Mat)),
+		ui.desvideo,
 		SLOT(SetImage(cv::Mat))
 		);
 
@@ -59,4 +67,17 @@ void XVideoUI::SliderRelease()
 void XVideoUI::SetPos(int pos)//滑动条拖动
 {
 	XVideoThread::Get()->Seek((double)pos / 1000.0);
+}
+
+void XVideoUI::Set()//设置过滤器
+{
+	XFilter::Get()->Clear();
+
+	//对比度和亮度
+	if (ui.bright->value() > 0 || ui.contrast->value() > 1.0) {
+		XFilter::Get()->Add(XTask{
+			XTASK_GAIN,//类型
+			{(double)ui.bright->value(), ui.contrast->value()}//参数
+		});
+	}
 }

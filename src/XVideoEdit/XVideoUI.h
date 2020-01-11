@@ -16,6 +16,7 @@ public slots:
 	void SliderPress();
 	void SliderRelease();
 	void SetPos(int);//滑动条拖动
+	void Set();//设置过滤器
 
 private:
 	Ui::XVideoUIClass ui;
